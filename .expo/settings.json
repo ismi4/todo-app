@@ -1,0 +1,8 @@
+{
+  "urlRandomness": "ja-bkn",
+  "hostType": "lan",
+  "lanType": "ip",
+  "dev": true,
+  "minify": false,
+  "https": true
+}

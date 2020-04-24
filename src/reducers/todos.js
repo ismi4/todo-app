@@ -13,6 +13,13 @@ const todos = (state = [], action) => {
       return state.map((todo) =>
         todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
       );
+    case "DISMISS_FINISHED": {
+      let newState = [];
+      for (let i = 0; i < state.length; i++) {
+        if (state[i].completed === false) newState.push(state[i]);
+      }
+      return newState;
+    }
 
     default:
       return state;

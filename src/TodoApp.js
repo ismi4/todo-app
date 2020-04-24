@@ -3,12 +3,14 @@ import { StyleSheet, Text, View } from "react-native";
 import AddTodo from "./containers/AddTodo";
 import VisibleTodos from "./containers/VisibleTodos";
 import { ScrollView } from "react-native-gesture-handler";
+import DismissFinished from "./containers/DismissFinished";
 
 export default class TodoApp extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <AddTodo />
+        <DismissFinished />
 
         <View style={styles.todos}>
           <ScrollView>

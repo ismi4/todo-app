@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { addTodo } from "../actions";
 import {
   View,
   Text,
@@ -15,7 +16,7 @@ class AddTodo extends Component {
   };
 
   addTodo = (text) => {
-    this.props.dispatch({ type: "ADD_TODO", text });
+    this.props.dispatch(addTodo(text));
     this.setState({ text: "" });
   };
 
